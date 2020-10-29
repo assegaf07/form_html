@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM PENDAFTARAN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="judul">
+            <h2>Form Pendaftaran Kampus</h2>
+            <h3>STT Terpadu Nurul Fikri</h3>
+        </div>
+
+        <div class="hr">
+            <hr style="border: 2px solid black;">
+            <br>
+            <form action="#" method="get" class="fo1">
+
+                <legend>Informasi Personal <hr class="hrr"></legend>
+                <br>
+                <label for="firstName" class="label1" >Nama Lengkap</label>
+                <input id="firstName" type="text" class="input1" placeholder="Nama Lengkap" required>
+             
+                <label for="tlahir" class="label1">Tanggal Lahir</label>
+                <input id="tlahir" type="date" class="input1">
+
+        
+                <label for="jk" class="label1">Jenis Kelamin</label>
+                <div style="display: inline;" id="jk" class="label1">
+
+                    <input type="radio" id="pria" name="gender" value="pria">
+                    <label for="pria" style="margin-right: 30px;">Pria</label>
+                    
+                    <input type="radio" id="wanita" name="gender" value="wanita">
+                    <label for="wanita">Wanita</label>
+                    
+                </div>
+                <br>
+                
+                <legend>Kontak <hr class="hrr"></legend>
+                <br>
+
+                <label for="alamat" class="label1">Alamat</label>
+                <input type="text" id="alamat" class="input1" placeholder="alamat">
+
+                <label for="kota_prov" class="label1">Kota & Provinsi</label>
+                <input type="text" id="kota_prov" class="input1" placeholder="kota dan provinsi">
+                
+                <label for="notel" class="label1">Nomor Telfon</label>
+                <input type="tel" id="notel" class="input1" >
+
+                <label for="email" class="label1">Email</label>
+                <input type="email" id="email" class="input1" size="30" placeholder="email@email.com" required>
+
+                <br>
+                <legend>Informasi Perkuliahan <hr class="hrr"></legend>
+                <br>
+
+                <label for="jurusan" class="label1">Jurusan</label>
+                <select name="jurusan" id="jurusan" class="input1"> 
+                    <option value="">--Pilih Jurusan--</option>
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                </select>
+
+                <label for="waktu" class="label1">Waktu Pembelajaran</label>
+                <select name="waktu" id="waktu" class="input1">
+                    <option value="">--Pilih waktu pembelajaran--</option>
+                    <option value="pagi">Reguler Pagi</option>
+                    <option value="malam">Reguler Malam</option>
+                    <option value="weekend">Reguler Sabtu</option>
+                </select>
+
+
+                <label for="bayar" class="label1">Tipe Pembayaran</label>
+                <div style="display: inline;  padding: 15px" id="bayar">
+
+                    <input type="radio" id="lunas" name="bayar" value="lunas">
+                    <label for="lunas" style="margin-right:20px;">Lunas</label>
+                    
+                    <input type="radio" id="bertahap" name="bayar" value="bertahap" >
+                    <label for="bertahap" style="margin-right:20px;">Bertahap</label>
+
+                    <input type="radio" id="beasiswa" name="bayar" value="beasiswa">
+                    <label for="beasiswa" style="margin-right:20px;">Beasiswa</label>
+                    
+                </div>
+                <input type="submit" value="Kirim Form!"  id="submit">
+
+                <br>
+               
+                
+            </form>
+
+            
+        </div>
+        
+   </div>
+</body>
+</html>
